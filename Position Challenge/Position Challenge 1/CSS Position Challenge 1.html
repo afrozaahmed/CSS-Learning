@@ -1,0 +1,93 @@
+<html>
+ <head>
+     <style>
+         *{
+             box-sizing: border-box;
+             margin:0;
+             padding:0;
+         }
+         body{
+             background-color: black;
+         }
+         .main-box{
+             position: fixed;
+             width: 50%;
+             height: 50%
+         }
+         #main-top-left{
+             background: #ccc;
+         }
+         #main-top-right{
+             right:0;
+             background: #e86f88;
+         }
+         #main-bottom-left{
+             background: #79badb;
+             bottom: 0;
+         }
+         #main-bottom-right{
+             background: #a2dbb1;
+             bottom: 0;
+             right: 0;
+         }
+         .small-box{
+             height:50px;
+             width:50px;
+             border: 2px white solid;
+             color: white;
+             text-align: center;
+             position: absolute;
+         }
+         #b1{
+             background: red;
+         }
+         #b2{
+             background: orange;
+             right:0;
+         }
+         #b3{
+             background: steelblue;
+             bottom: 0;
+         }
+         #b4{
+             background: blue;
+             right: 0;
+         }
+         #b5{
+             background: purple;
+         }
+         #b6{
+             background: coral;
+             bottom: 0;
+             right: 0
+         }
+         #b7 {
+            background: gray;
+            bottom: 0;
+        }
+        #b8 {
+            background: red;
+            bottom: 0;
+            right: 0;
+        }
+     </style>
+ </head>
+  <body>
+    <div id="main-top-left" class="main-box">
+      <div id="b1" class="small-box"> 1 </div>   
+      <div id="b2" class="small-box"> 2 </div> 
+    </div>
+    <div id="main-top-right" class="main-box">
+      <div id="b3" class="small-box"> 3 </div> 
+      <div id="b4" class="small-box"> 4 </div>
+    </div>
+    <div id="main-bottom-left" class="main-box">
+      <div id="b5" class="small-box"> 5 </div> 
+      <div id="b6" class="small-box"> 6 </div>
+    </div>
+    <div id="main-bottom-right" class="main-box">
+      <div id="b7" class="small-box"> 7 </div> 
+      <div id="b8" class="small-box"> 8 </div>
+    </div>
+  </body>
+</html>

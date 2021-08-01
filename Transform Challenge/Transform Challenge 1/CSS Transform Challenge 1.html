@@ -1,0 +1,96 @@
+<html>
+ <head>
+     <style>
+         * {
+  margin:0;
+}
+
+.box {
+  width: 100px;
+  height: 100px; 
+  position: fixed;
+}
+
+#box1 { 
+  animation: box1; 
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  background: coral;
+  top: 0;
+  left: 0;
+}
+
+#box2 {
+  animation: box2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  background: steelblue;
+  top: 100px;
+  left: 100px;
+  border-radius: 50%;
+}
+
+@keyframes box1 {  
+  25% {
+    background: red;
+    top: 0;
+    left: 80vw;
+    border-radius: 50% 0 0 0;
+  }
+  
+  50% {
+    background: blue;
+    top: 400px;
+    left: 80vw;
+    border-radius: 50% 50% 0 0;
+  }
+  
+  75% {
+    background: green;
+    top: 400px;
+    left: 0;
+    border-radius: 50% 50% 50% 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    border-radius: 50% 50% 50% 50%;
+  }
+}
+
+@keyframes box2 {  
+  25% {
+    background: green;
+    top: 300px;
+    left: 100px;
+    border-radius: 50% 50% 50% 0;
+  }
+  
+  50% {
+    background: blue;
+    top: 300px;
+    left: 70vw;
+    border-radius: 50% 50% 0 0;
+  }
+  
+   75% {
+    background: red;
+    top: 100px;
+    left: 70vw;
+    border-radius: 50% 0 0 0;
+  }
+ 
+  100% {
+    top: 100px;
+    left: 100px;
+    border-radius: 0 0 0 0;
+  }  
+}
+
+     </style>
+ </head>
+ <body>
+  <div id="box1" class="box"> </div>
+  <div id="box2" class="box"> </div>
+ </body>
+</html>

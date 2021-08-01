@@ -1,0 +1,49 @@
+<html>
+ <head>
+ <style>
+     body{
+         font: 1.2em /1.5 Helvetica Neue;
+     }
+     * {
+         margin: 0;
+         box-sizing: border-box;
+     }
+     .container, .inner{
+        position: relative;
+        padding: 0.5em;
+        margin: 1em;
+        border: 5px solid #ccc
+     }
+     #first, #second{
+         width:150px;
+         height: 150px;
+         background-color: steelblue;
+         color: white;
+         text-align: center;
+         padding-top: 3em;
+         position: absolute;
+     }
+     #first {
+        top: 0;
+        right: 0;
+        }
+
+    #second {
+        bottom: 0;
+        left: 0;
+        }
+ </style>
+ </head>
+ <body>
+   <div class="container">
+     <div class="inner">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod at est maximus ultrices. Sed nec mauris vulputate justo euismod consectetur. Nulla euismod posuere sem, vel interdum sapien interdum sed. Maecenas ante risus, porttitor ac mollis eget, malesuada eget nunc. Duis accumsan commodo diam porttitor blandit. Pellentesque fringilla odio nulla. Curabitur ac nulla nec odio venenatis ullamcorper eget nec ipsum. In sed metus tempor, efficitur orci quis, tincidunt ipsum. Vivamus facilisis auctor ligula.</p>
+      <div id="first">First</div>  
+     </div>
+     <div class="inner"> 
+      <div id="second">Second</div>
+      <p>Etiam aliquet consectetur vulputate. Vestibulum consequat felis a ligula posuere placerat. Curabitur commodo tortor egestas, molestie leo molestie, faucibus arcu. Praesent tincidunt nisi eget turpis tristique, sit amet rutrum ex sagittis. Pellentesque ut arcu et sapien interdum consequat consectetur nec mi. Nunc volutpat sapien odio, id pulvinar mi mollis eget. Suspendisse sit amet purus suscipit nulla fringilla interdum. Duis egestas eleifend dui, vitae vulputate quam efficitur nec. Cras ac massa quis lacus mollis congue. Etiam rutrum odio sodales lectus interdum, non sollicitudin ex rhoncus. Ut dictum enim sapien, quis mollis dolor efficitur nec.</p>
+     </div>
+    </div>
+ </body>
+</html>

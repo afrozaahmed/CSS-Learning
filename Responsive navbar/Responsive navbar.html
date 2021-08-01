@@ -1,0 +1,75 @@
+<html>
+ <head>
+     <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+          }
+          
+          #navbar {
+            background: #4c6ca4;
+            overflow: hidden;
+            padding: 0 2rem;
+          }
+          
+          #navbar li {
+            width: 16.5%;
+            text-align: center;
+            float: left;
+            list-style: none;
+          }
+          
+          #navbar li a {
+            padding: 1.5rem;
+            width: 100%;
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+          }
+          
+          #navbar li a:hover {
+            background: #fff;
+            color: #4c6ca4;
+          }
+
+          @media only screen and (max-width: 768px) and (min-width: 500px)
+          {
+              #navbar li{
+                  width: 50%;
+                  border: white 1px solid;
+              }
+              #navbar {
+                  padding:0;
+              }
+          }
+
+          /*
+          @media only screen and (max-width: 500px)
+                {
+                #navbar li {
+                    width: 100%;
+                    border: white 1px solid;
+                }
+                
+                #navbar {
+                    padding: 0;
+                }
+            }
+          */
+          
+     </style>
+ </head>
+ <body>
+   <nav>
+     <ul id="navbar">
+      <li><a href="#"> Home </a></li>
+      <li><a href="#"> Profile </a></li>
+      <li><a href="#"> About </a></li>
+      <li><a href="#"> Blogs </a></li>
+      <li><a href="#"> Contact </a></li>
+      <li><a href="#"> Help </a></li>
+     </ul>
+   </nav>
+ </body>
+</html>

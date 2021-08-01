@@ -1,0 +1,49 @@
+<html>
+ <head>
+     <style>
+         .dropdown {
+    display: inline-block;
+    position: relative;    
+}
+.mainmenu {
+    border: none;
+    padding:10px;
+    margin-top:10px;
+    cursor: pointer;
+    background-color: olive;
+    color: white;    
+}
+.mainmenu:hover {
+    background-color: blue;
+}
+.submenu {
+    display: none;
+    min-width: 100px;
+    background-color: deepskyblue;    
+}
+.submenu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: blue;    
+}
+.submenu a:hover {
+    background-color: blue;
+    color: white;
+}
+.dropdown:hover .submenu {
+    display: block;
+}
+     </style>
+ </head>
+ <body>
+  <nav class="dropdown">
+    <button class="mainmenu">Products</button>
+    <div class="submenu">
+      <a href="#">Living</a>
+      <a href="#">Garden</a>
+      <a href="#">Kitchen</a>
+    </div>
+  </nav>
+ </body>
+</html>

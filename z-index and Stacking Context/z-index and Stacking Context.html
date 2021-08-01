@@ -1,0 +1,58 @@
+<html>
+ <head>
+     <style>
+         #outer-1, #outer-2 {
+  display: flex;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+}
+
+#box-1 {
+  margin-top: 0px;
+  margin-left: 10px;
+  background: #ccc;
+}
+
+#outer-1 #box-1 {
+  opacity: 0.99;
+}
+
+#outer-2 #box-2 {
+  transform: scale(1);
+}
+
+#box-2 {
+  margin-top: 10px;
+  margin-left: -20px;
+  background: #a00;
+}
+
+#box-3 {
+  margin-top: 30px;
+  margin-left: -40px;
+  background: #111;
+}
+
+     </style>
+ </head>
+ <body>
+  <h2>Using opacity property on gray box!</h2>
+  
+  <div id="outer-1">
+    <div id="box-1" class="box"> </div>
+    <div id="box-2" class="box"> </div>
+    <div id="box-3" class="box">  </div>
+  </div>
+  <br>
+  <h2>Using transfrom property on red box!</h2>
+  
+  <div id="outer-2">
+    <div id="box-1" class="box"> </div>
+    <div id="box-2" class="box"> </div>
+    <div id="box-3" class="box">  </div>
+  </div>
+ </body>
+</html>

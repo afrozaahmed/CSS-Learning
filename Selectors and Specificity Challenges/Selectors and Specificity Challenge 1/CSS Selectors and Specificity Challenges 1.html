@@ -1,0 +1,38 @@
+<html>
+ <head>
+     <style>
+         body {
+  border: black 10px solid;
+  padding: 30px;
+}
+
+div > p:first-of-type {
+  background-color: yellow;
+}
+
+div + p {
+  background-color: orange;
+}
+     </style>
+ </head>
+ <body>
+  <div>
+    <p>This is first paragraph in div 1.</p>
+    <p>This is second paragraph in div 1.</p>
+    <p>This is third paragraph in div 1.</p>
+  </div>
+
+  <p> First paragraph in between two divs. </p>
+
+  <p> Second paragraph in between two divs. </p>
+
+  <div>
+    <p>This is first paragraph in div 2.</p>
+    <p>This is second paragraph in div 2.</p>
+    <p>This is third paragraph in div 2.</p>
+  </div>
+
+  <p> This paragraph is after second div. </p>
+
+ </body>
+</html>

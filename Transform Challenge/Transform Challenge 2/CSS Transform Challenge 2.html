@@ -1,0 +1,42 @@
+<html>
+ <head>
+     <style>
+         * {
+  margin:0;
+}
+
+.box {
+  width: 100%;
+  height: 100px; 
+  position: fixed;
+}
+
+.box1 { 
+  background: coral;
+  top: 0;
+  left: 0;
+}
+
+.box2 {
+  background: steelblue;
+  top: 100px;
+  color: white;
+}
+
+#center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+     </style>
+ </head>
+ <body>
+  <div class="box box1">
+    <p id="center">Align the text in the center of the page.</p>
+    </div>
+  <div class="box box2">
+    <p id="center">Text should be align in the center of the page.</p>
+    </div>
+ </body>
+</html>

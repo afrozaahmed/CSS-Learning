@@ -1,0 +1,64 @@
+<html>
+ <head>
+     <style>
+         .gallerycontainer{
+    position: relative;
+}
+
+.small-image {
+    width: 100px;
+    height: 75px;
+    border: 0;
+}
+
+.thumbnail:hover{
+    background-color: transparent;
+}
+
+.thumbnail:hover img{
+    border: 1px solid blue;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+    position: absolute;
+    background-color: lightyellow;
+    padding: 5px;
+    border: 1px dashed gray;
+    visibility: hidden;
+    color: black;
+    text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+    border-width: 0;
+    padding: 2px;
+    height: 400px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image*/
+    visibility: visible;
+    top: 0;
+    left: 230px; /*position where enlarged image should offset horizontally */
+    z-index: 50;
+}
+     </style>
+ </head>
+ <body>
+    <div class="gallerycontainer">
+
+    <a class="thumbnail" href="#"><img class="small-image" src="/Position Challenge 3/rose.jpeg"  /><span><img src="/Position Challenge 3/rose.jpeg" /><br />Simply beautiful.</span></a>
+
+    <a class="thumbnail" href="#"><img class="small-image" src="/Position Challenge 3/coconut.jpeg"/><span><img src="/Position Challenge 3/coconut.jpeg" /><br />Best way to remove thirst</span></a>
+
+    <br />
+
+    <a class="thumbnail" href="#"><img class="small-image" src="/Position Challenge 3/cat.jpeg"  /><span><img src="/Position Challenge 3/cat.jpeg" /><br />Adorable cat eyes.</span></a> 
+
+    <a class="thumbnail" href="#"><img class="small-image" src="/Position Challenge 3/sky.jpeg" /><span><img src="/Position Challenge 3/sky.jpeg" /><br />Look at the vastness of the sky.</span></a>
+
+    <br />
+
+    </div>
+
+ </body>
+</html>
